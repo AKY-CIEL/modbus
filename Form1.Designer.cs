@@ -66,6 +66,7 @@
             this.buttonDeconnexion.TabIndex = 3;
             this.buttonDeconnexion.Text = "Deconnexion";
             this.buttonDeconnexion.UseVisualStyleBackColor = true;
+            this.buttonDeconnexion.Click += new System.EventHandler(this.buttonDeconnexion_Click);
 
             // affichage
             this.textBoxStatut.Location = new System.Drawing.Point(12, 50);
