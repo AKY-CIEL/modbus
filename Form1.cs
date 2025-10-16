@@ -16,5 +16,15 @@ namespace modbus
         {
             InitializeComponent();
         }
+
+        private void buttonConnexion_Click(object sender, EventArgs e)
+        {
+            string adresseIP = textBoxAdresseIP.Text;
+
+            textBoxStatut.Text += $"Connexion au serveur {adresseIP}\r\n";
+
+            textBoxStatut.SelectionStart = textBoxStatut.Text.Length;
+            textBoxStatut.ScrollToCaret();
+        }
     }
 }
